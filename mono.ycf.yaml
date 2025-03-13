@@ -1,0 +1,4 @@
+base_dir: ./functions
+service_account_key_path: ./authorized_key.json
+auth_type: oauth
+s3_bucket: for-function

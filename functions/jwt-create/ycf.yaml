@@ -1,0 +1,33 @@
+environments:
+  - name: production
+    id: d4enib91vangsnfpb6ro
+    memory: 128
+    runtime: nodejs18
+    description: "d"
+    entrypoint:
+      file: src/index.ts
+      function: handler
+    timeout: 3
+    service_account_id: ajeqtvsanbnpqg6u7unk
+    additional_files:
+      - test.json
+      - test2/test2/test2.json
+      -
+  - name: dev
+    id: d4e8cgamr5povis2shkq
+    memory: 128
+    runtime: nodejs18
+    description: "d"
+    entrypoint:
+      file: src/index.ts
+      function: handler
+    timeout: 3
+    service_account_id: ajeqtvsanbnpqg6u7unk
+    additional_files:
+      - test.json
+      - test2/test2/test2.json
+#environment:
+#  - name: TEST_ENV
+#    value: test1
+#  - name: TEST_ENV_2
+#    value: test2

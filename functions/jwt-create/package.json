@@ -1,0 +1,18 @@
+{
+  "name": "jwt-create",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx esbuild src/index.ts --bundle --outdir=dist --format=cjs --minify --platform=node --legal-comments=none",
+    "dev": "npx esbuild src/index.ts --bundle --watch --outdir=dist --format=cjs --minify --platform=node --legal-comments=none"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.8",
+    "esbuild": "^0.25.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "fast-jwt": "^5.0.5"
+  }
+}
